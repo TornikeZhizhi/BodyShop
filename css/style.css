@@ -142,17 +142,33 @@ h1 {
 }
 
 .page.active {
-  z-index: 1;
+  z-index: 1000;
 }
 .page.flipped {
   transform: rotateY(-180deg);
 }
-.page.flipped:last-of-type {
-  z-index: 1;
+
+
+.page:nth-child(1){
+ z-index: 25;
+}.page:nth-child(2){
+ z-index: 24;
+}.page:nth-child(3){
+ z-index: 23;
+}.page:nth-child(4){
+ z-index: 22;
+}.page:nth-child(5){
+ z-index: 21;
+}.page:nth-child(6){
+ z-index: 20;
+}.page:nth-child(7){
+ z-index: 19;
+}.page:nth-child(8){
+ z-index: 18;
 }
-
-
-
+.page.flipped {
+  z-index: 100;
+}
 .qr {
   margin: 50px auto;
   max-width: 50%;

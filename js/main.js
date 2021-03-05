@@ -9,6 +9,16 @@ var currentPage = 0;
 $(".right_dot").on("click",function(){
 
     nextPage()
+
+
+      var lg = $(".page").length
+    console.log(lg)
+
+        if ($(".page").last().hasClass("flipped")) {
+
+        
+        }
+
 })
 $(".left_dot").on("click",function(){
 
@@ -26,6 +36,8 @@ $(".left_dot").on("click",function(){
              },1000)
 
     }
+
+
 })
 
 $(".book_link").on("click",function(e){
