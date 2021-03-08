@@ -97,7 +97,7 @@ h1,h2,h3,h4 {
 
 .book_link {
  background-color: #0F4233;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 14px 62px;
     display: flex;
     align-items: center;
@@ -186,6 +186,7 @@ h1,h2,h3,h4 {
 /*  background: -webkit-gradient(linear, 0% 0%, 100% 100%, from(#FFFFFF), to(#CCCCCC));
   background: linear-gradient(to bottom right, #fff, #ccc);*/
   background-color: #fff;
+  z-index: 1;
 }
 .front {
   padding: 10% 20px 20px;
@@ -393,15 +394,26 @@ content: "";
     height: 100%;
     background-image: url(../images/shadow_right.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    opacity: 0.8;
 }
 
 .back:after {
     content: "";
     position: absolute;
     top: 0;
-    right: -5px;
+    right: 0px;
     width: 85px;
     height: 100%;
     background-image: url(../images/shadow_left.png);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    opacity: 0.8;
+}
+
+.book .page:nth-child(2) .front:after,
+.book .page:nth-child(2) .back:after {
+  content: unset;
 }
