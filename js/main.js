@@ -12,11 +12,10 @@ $(".right_dot").on("click",function(){
 
 
       var lg = $(".page").length
-    console.log(lg)
-
+ 
         if ($(".page").last().hasClass("flipped")) {
 
-        
+           // $(".page").last().find() 
         }
 
 })
@@ -28,8 +27,11 @@ $(".left_dot").on("click",function(){
         
         $(".scene").removeClass("activer")
 
-        $(".left_dot").removeClass("flipped")
-         $(".right_dot").removeClass("flipped")
+        $(".book_bottom_button").removeClass("flipped")
+
+
+
+         $(".main_fluid").removeClass("shadow")
 
            setTimeout(function(){
              $(".book_outsite_text").fadeIn(500);
@@ -48,8 +50,8 @@ $(".book_link").on("click",function(e){
 
 
     setTimeout(function(){
-     $(".left_dot").addClass("flipped")
-    $(".right_dot").addClass("flipped")
+     $(".book_bottom_button").addClass("flipped")
+     $(".main_fluid").addClass("shadow")
 },700)
 
 
