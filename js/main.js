@@ -17,6 +17,7 @@ $(".right_dot").on("click",function(){
 
           setTimeout(function(){
             $(".main_fluid").removeClass("shadow")
+            $(".book_outsite_text_last").addClass("shadow")
           },500)
           
            // $(".page").last().find() 
@@ -34,26 +35,29 @@ $(".left_dot").on("click",function(){
         $(".scene").removeClass("activer")
 
         $(".book_bottom_button").removeClass("flipped")
-
-
-
-         $(".main_fluid").removeClass("shadow")
-
+    
+        
            setTimeout(function(){
+                        $(".main_fluid").removeClass("shadow")
+               },350)
+           setTimeout(function(){
+
              $(".book_outsite_text").fadeIn(500);
-             },1000)
+            },1000)
 
     }else {
-       setTimeout(function(){
 
-     $(".main_fluid").addClass("shadow")
-    },500)
+        $(".book_outsite_text_last").removeClass("shadow")
+          setTimeout(function(){
+
+            $(".main_fluid").addClass("shadow")
+         },300)
     }
 
 
 })
 
-$(".book_link").on("click",function(e){
+$(".book_outsite_text .book_link").on("click",function(e){
     e.preventDefault()
     nextPage()
     $(".book_outsite_text").fadeOut(0);
@@ -65,6 +69,37 @@ $(".book_link").on("click",function(e){
      $(".main_fluid").addClass("shadow")
 },700)
 
+
+})
+
+
+$(".book_outsite_text_last .book_link").on("click",function(e){
+
+    e.preventDefault()
+   
+
+    var pageLength = 5;
+      var k =  setInterval(function(){
+        $(".main_fluid").removeClass("shadow")
+        $(".scene").removeClass("activer")
+        $(".book_outsite_text_last").removeClass("shadow")
+           
+       
+        prevPage()
+            pageLength--;
+
+        if (pageLength == 0) {
+            
+            clearInterval(k)
+        }
+            
+        },100)
+
+       setTimeout(function(){
+             $(".book_outsite_text").fadeIn(500);
+             },1000)
+
+     
 
 })
 
