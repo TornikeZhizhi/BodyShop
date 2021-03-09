@@ -15,6 +15,10 @@ $(".right_dot").on("click",function(){
  
         if ($(".page").last().hasClass("flipped")) {
 
+          setTimeout(function(){
+            $(".main_fluid").removeClass("shadow")
+          },500)
+          
            // $(".page").last().find() 
         }
 
@@ -22,6 +26,8 @@ $(".right_dot").on("click",function(){
 $(".left_dot").on("click",function(){
 
     prevPage()
+   
+
 
     if ($(".page").eq(0).hasClass("active")) {
         
@@ -37,6 +43,11 @@ $(".left_dot").on("click",function(){
              $(".book_outsite_text").fadeIn(500);
              },1000)
 
+    }else {
+       setTimeout(function(){
+
+     $(".main_fluid").addClass("shadow")
+    },500)
     }
 
 

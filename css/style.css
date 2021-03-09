@@ -77,6 +77,8 @@ h1,h2,h3,h4 {
 
 .content_list {
   margin-top: 30px;
+  height: calc(100% - 70px);
+    overflow-y: scroll;
 }
 .content_list li span:first-child {
       padding: 5px 17px 5px 0px;
@@ -128,15 +130,16 @@ h1,h2,h3,h4 {
   display: flex;
   align-items: center;
   padding-bottom: 50px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .scene {
-        width: 450px;
-    flex: 0 0 450px;
-    height: 80vh;
-    margin: 0% 0% 0% 0%;
-    perspective: 3000px;
-    transition: 1s;
+        width: 50%;
+        flex: 0 0 50%;
+        height: 80vh;
+        margin: 0% 0% 0% 0%;
+        perspective: 3000px;
+        transition: 1s;
+        height: calc(100vh - 118px);
 }
 
 .scene.activer {
@@ -352,7 +355,7 @@ background-image: linear-gradient(to left, rgb(0 0 0 / 20%) , rgba(0,0,0,0));
   border-radius: 30px;
   left: 50%;
   transform: translateX(-50%);
-  bottom: -26px;
+  bottom: -35px;
   display: flex;
   background: #fff;
   padding: 8px;
@@ -417,3 +420,52 @@ content: "";
 .book .page:nth-child(2) .back:after {
   content: unset;
 }
+p,ul,li,span {
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+
+@media only screen and (max-width:950px) {
+ .main_fluid {
+  padding: 0 10px;
+ }
+
+ .book_bottom_button {
+  bottom: -80px;
+ }
+}
+
+@media only screen and (max-width:750px) {
+  .book_link {
+    padding: 19px 40px;
+    margin-top: 10px;
+    }
+
+    html {
+      overflow: unset;
+    }
+
+}
+
+
+
+@media only screen and (max-width:650px) {
+  .book_link {
+    padding: 19px 40px;
+    margin-top: 10px;
+    }
+
+     html {
+      overflow: unset;
+    }
+
+    .main_fluid {
+      flex-direction: column;
+    }
+}
+
+
