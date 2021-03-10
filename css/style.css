@@ -366,9 +366,19 @@ background-image: linear-gradient(to left, rgb(0 0 0 / 20%) , rgba(0,0,0,0));
     left: 22px;
     background-image: linear-gradient(to right, rgb(0 0 0 / 37%) , rgba(0,0,0,0));
     
-
-
 }
+
+.book .page:last-child .back:after {content:" ";width: 25px;height: 100%;position: absolute;top: 0;right: 1px;background-image: linear-gradient(to left, rgb(0 0 0 / 31%) , rgba(0,0,0,0));opacity: 1;}
+.book .page:last-child .back:before {
+    content: " ";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 22px;
+    background-image: linear-gradient(to right, rgb(0 0 0 / 21%) , rgba(0,0,0,0));
+}
+
 
 .page .back img{
 
