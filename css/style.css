@@ -595,10 +595,12 @@ h2 {
     display: none;
   }
   .book_bottom_button.flipped2 {
-    display: flex;
+    display: flex !important;
   }
 }
-
+.book_bottom_button.flipped2 {
+    display: flex !important;
+  }
 
 @media only screen and (max-width:400px) {
 
@@ -629,7 +631,7 @@ p, ul, li, span {
 }
 
   .front {
-    padding: 10px 10px 10px;
+    padding: 10px 5px 10px;
 }
   .scene {
       height: 270px;

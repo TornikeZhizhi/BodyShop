@@ -10,12 +10,14 @@ $(".right_dot").on("click",function(){
 
     nextPage()
 
-
+    // $(".scene").addClass("activer")
       var lg = $(".page").length
  
         if ($(".page").last().hasClass("flipped")) {
 
           setTimeout(function(){
+
+            $(".book_bottom_button").removeClass("flipped2")
             $(".main_fluid").removeClass("shadow")
             $(".book_outsite_text_last").addClass("shadow")
           },500)
@@ -58,6 +60,7 @@ $(".left_dot").on("click",function(){
 })
 
 $(".book_outsite_text .book_link").on("click",function(e){
+ 
     e.preventDefault()
     nextPage()
     $(".book_outsite_text").fadeOut(0);
@@ -77,7 +80,7 @@ $(".book_outsite_text_last .book_link").on("click",function(e){
 
     e.preventDefault()
    
-
+    $(".book_bottom_button").removeClass("flipped2")
     var pageLength = 5;
       var k =  setInterval(function(){
         $(".main_fluid").removeClass("shadow")
