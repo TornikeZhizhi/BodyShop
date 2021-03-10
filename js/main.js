@@ -34,7 +34,7 @@ $(".left_dot").on("click",function(){
         
         $(".scene").removeClass("activer")
 
-        $(".book_bottom_button").removeClass("flipped")
+        $(".book_bottom_button").removeClass("flipped2")
     
         
            setTimeout(function(){
@@ -65,7 +65,7 @@ $(".book_outsite_text .book_link").on("click",function(e){
 
 
     setTimeout(function(){
-     $(".book_bottom_button").addClass("flipped")
+     $(".book_bottom_button").addClass("flipped2")
      $(".main_fluid").addClass("shadow")
 },700)
 

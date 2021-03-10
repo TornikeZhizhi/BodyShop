@@ -425,7 +425,7 @@ background-image: linear-gradient(to left, rgb(0 0 0 / 20%) , rgba(0,0,0,0));
   opacity: 0;
   visibility: hidden;
 } 
-.book_bottom_button.flipped {
+.book_bottom_button.flipped2 {
   opacity: 1;
   visibility: visible;
 }
@@ -518,6 +518,17 @@ h2 {
 
 
 @media only screen and (max-width:650px) {
+
+  .copyright {
+     position: unset;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-right: 15px;
+}
   .book_link {
     padding: 19px 40px;
     margin-top: 10px;
@@ -527,9 +538,104 @@ h2 {
       overflow: unset;
     }
 
+    .book_outsite_text, .book_outsite_text_last {
+    padding: 10px 0px 10px 10px;
+    transition: all 1s;
+}
+
     .main_fluid {
       flex-direction: column;
     }
+
+    .scene {
+      height: 340px;
+    }
+
+    .main_fluid:after {
+      content: unset;
+    }
+
+    .scene {
+      width: 90%;
+      flex:0 0 90%;
+
+    max-width: 238px;
+
+    }
+
+    .scene.activer {
+      width: 50%;
+      flex:0 0 50%;
+      max-width: 100%;
+    }
+
+   .book_outsite_text_last .book_link {
+    padding: 18px 19px;
+    margin-top: 10px;
+    display: flex;
+  }
+
+  .content_list li {
+    align-items: center;
+  }
+
+  .book_outsite_text_last {
+    position: unset;
+    transform:translateY(0);
+    display: none;
+  }
+
+  .book_outsite_text_last.shadow {
+    display: block;
+  }
+  .book_bottom_button {
+    position: unset;
+    margin-top: 20px;
+    transform: translate(0);
+    display: none;
+  }
+  .book_bottom_button.flipped2 {
+    display: flex;
+  }
 }
 
 
+@media only screen and (max-width:400px) {
+
+
+.front:after {
+  width: 35px;
+}
+.m_list {
+    margin-left: 15px;
+}
+h2 {
+    font-size: 14px;
+}
+p, ul, li, span {
+    font-size: 12px;
+}
+.content_list {
+    margin-top: 15px;
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+    padding-right: 10px;
+}
+  .content_list li span {
+    font-size: 10px;
+  }
+  .content_list li span:first-child {
+    padding: 3px 5px 5px 0px;
+}
+
+  .front {
+    padding: 10px 10px 10px;
+}
+  .scene {
+      height: 270px;
+  }
+
+  .scene.activer {
+      height: 240px;
+  }
+}
