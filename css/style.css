@@ -246,19 +246,31 @@ h1,h2,h3,h4 {
 }
 .front {
   padding: 10% 20px 20px;
+
 }
+
+/*.active .front {
+    z-index: 5;
+}*/
 .back {
 
   transform: rotateY(180deg);
 }
 
+/*.page {
+  display: none;
+}*/
 .page.active {
   z-index: 1000;
+  /*display: block;*/
 }
 .page.flipped {
+  /*display: block;*/
   transform: rotateY(-180deg);
 }
-
+/*.page.active .back {
+  display: none;
+}*/
 
 .page:nth-child(1){
  z-index: 25;
@@ -385,6 +397,7 @@ background-image: linear-gradient(to left, rgb(0 0 0 / 20%) , rgba(0,0,0,0));
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: bottom;
 }
 
 @media only screen and (min-height:800px) {
@@ -640,4 +653,12 @@ p, ul, li, span {
   .scene.activer {
       height: 240px;
   }
+}
+
+p {
+  text-indent: 13px;
+}
+
+.right_info p {
+  margin-bottom: 0;
 }

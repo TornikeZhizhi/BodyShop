@@ -81,7 +81,7 @@ $(".book_outsite_text_last .book_link").on("click",function(e){
     e.preventDefault()
    
     $(".book_bottom_button").removeClass("flipped2")
-    var pageLength = 5;
+    var pageLength = 18;
       var k =  setInterval(function(){
         $(".main_fluid").removeClass("shadow")
         $(".scene").removeClass("activer")
@@ -129,3 +129,21 @@ function nextPage() {
     
     
 }
+
+// $(".content_list li").click(function(){
+//   var x = 0;
+//   var dataid = $(this).attr("data-id")
+//     var kk = setInterval(function(){
+//       nextPage()
+//       x++;
+//       if (x == dataid) {
+//         clearInterval(kk)
+//       }
+//     },100)
+// })
+
+// $(".page.flipped").mouseenter(function(){
+
+//   $(this).find(".front").addClass("zindex")
+
+// })
