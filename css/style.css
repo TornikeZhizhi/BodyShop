@@ -323,12 +323,7 @@ h1,h2,h3,h4 {
 
 }
 
-.left_dot:hover {
-  /* transform: scale(1.05) translateX(-75%); */
-}
-.right_dot:hover {
-  /* transform: scale(1.05) translateX(75%); */
-}
+
 .left_dot {
   /* left: 50%; */
   /* transform: translateX(-75%); */
@@ -450,9 +445,7 @@ background-image: linear-gradient(to left, rgb(0 0 0 / 20%) , rgba(0,0,0,0));
   transition: all .4s;
 }
 
-.book_bottom_button div:hover {
-  transform: scale(1.05);
-}
+
 
 .m_list {
   margin-left: 30px;
@@ -661,4 +654,39 @@ p {
 
 .right_info p {
   margin-bottom: 0;
+}
+
+.share_dot {
+  position: relative;
+  bottom: unset;
+  overflow:hidden;
+}
+
+.fb-share-button {
+  position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.0000000000001;
+    z-index: 1000;
+}
+
+.last_share {
+  
+    margin-top: 20px;
+    border: 1px solid #C9C9C9;
+    border-radius: 36px;
+    display: flex;
+    background: #fff;
+    padding: 5px;
+    max-width: 124px;
+    align-items: center;
+    position: relative;
+}
+
+.last_share span {
+  margin-left: 10px;
+}
+
+.fb-share-button.last{
+  left: 42px !important;
 }
