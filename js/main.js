@@ -130,20 +130,37 @@ function nextPage() {
     
 }
 
-// $(".content_list li").click(function(){
-//   var x = 0;
-//   var dataid = $(this).attr("data-id")
-//     var kk = setInterval(function(){
-//       nextPage()
-//       x++;
-//       if (x == dataid) {
-//         clearInterval(kk)
-//       }
-//     },100)
-// })
+$(".content_list li").click(function(){
 
-// $(".page.flipped").mouseenter(function(){
+  var x = 0;
+  var dataid = $(this).attr("data-id")
+    var kk = setInterval(function(){
+      nextPage()
+      x++;
+      if (x == dataid) {
+        clearInterval(kk)
+      }
+    },100)
+})
 
-//   $(this).find(".front").addClass("zindex")
+ // $(".scene").mouseenter(function(){
 
-// })
+ //  // alert("s")
+ //   // $(this).find(".front").addClass("zindex")
+
+ //   $(".page.active .back").hide()
+ //   $(".page").hide()
+ //   $(".page.active").show()
+ //   $(".page.flipped").show()
+
+ // })
+
+ // $(".scene").mouseleave(function(){
+
+ //  // alert("s")
+ //   // $(this).find(".front").addClass("zindex")
+ //    $(".page").show()
+ //   $(".page.active").show()
+ //   $(".back").show()
+
+ // })
