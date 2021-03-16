@@ -154,24 +154,9 @@ $(".content_list li").click(function(){
     },100)
 })
 
- // $(".scene").mouseenter(function(){
+var myaudio = document.getElementById("audioID");
 
- //  // alert("s")
- //   // $(this).find(".front").addClass("zindex")
+function play() { 
 
- //   $(".page.active .back").hide()
- //   $(".page").hide()
- //   $(".page.active").show()
- //   $(".page.flipped").show()
-
- // })
-
- // $(".scene").mouseleave(function(){
-
- //  // alert("s")
- //   // $(this).find(".front").addClass("zindex")
- //    $(".page").show()
- //   $(".page.active").show()
- //   $(".back").show()
-
- // })
+return myaudio.play(); 
+};

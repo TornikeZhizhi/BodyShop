@@ -630,7 +630,10 @@ h2 {
 
 @media only screen and (max-width:400px) {
 
-
+#audioID {
+  position: unset !important;
+  margin-top: 20px;
+}
 .front:after {
   width: 35px;
 }
@@ -673,7 +676,7 @@ p {
 }
 
 .right_info p {
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .share_dot {
@@ -709,4 +712,15 @@ p {
 
 .fb-share-button.last{
   left: 42px !important;
+}
+
+
+#audioID {
+
+  position: fixed;
+  bottom: 10px;
+  left: 0px;
+  z-index: 10;
+  outline: none;
+  transform: scale(0.9);
 }

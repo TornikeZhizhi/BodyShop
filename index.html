@@ -4,13 +4,14 @@
 	<title></title>
 	 <meta charset="UTF-8">
    	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <link rel="stylesheet" type="text/css" href="css/audio.css">
 	  <link rel="stylesheet" type="text/css" href="css/style.css">
 <meta property="og:url"           content="https://tornikezhizhi.github.io/BodyShop/" />
 <meta property="og:type"          content="website" />
 <meta property="og:title"         content="BodyShop" />
 <meta property="og:description"   content="სატესტო" />
 <meta property="og:image"         content="images/shareimg.png" />
-	
+
 </head>
 <body>
 <div id="fb-root"></div>
@@ -21,6 +22,8 @@ js = d.createElement(s); js.id = id;
 js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
 fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+
 
 
 
@@ -686,7 +689,7 @@ data-layout="button_count" data-size="large">
 			წიგნში გაეცნობით სხვადასხვა ასაკის გოგოების ისტორიებს, თუ როგორ შეიყვარეს საკუთარი თავი და სხეული, როგორ დაამარცხეს კომპლექსები, გაარღვიეს საზოგადოების მიერ დაწესებული სტანდარტები და იპოვეს კომფორტი საკუთარ სხეულში.
 		</p>
 
-		<a href="" class="book_link">
+		<a href="" class="book_link" onclick="play()">
 			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="12.875" viewBox="0 0 20 12.875">
 		  <g id="view" transform="translate(0 -82.176)">
 		    <g id="Group_9" data-name="Group 9" transform="translate(6.781 85.395)">
@@ -751,7 +754,8 @@ data-layout="button_count" data-size="large">
 				<span>Share</span>
 		</div>
 	</div>
-
+<audio controls id="audioID" autoplay loop> <source src="audio/good.mp3"  type="audio/mp3"> 
+</audio>
 
 </div>
 
@@ -777,10 +781,10 @@ data-layout="button_count" data-size="large">
 
 
 
-
 <script src="js/jquery-3.3.1.min.js"></script>
  <script src='https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js'></script>
  <script src='https://cdn.jsdelivr.net/npm/jquery-hammerjs@2.0.0/jquery.hammer.min.js'></script>
+<script src="js/audio.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
