@@ -521,7 +521,7 @@ h2 {
 
 @media only screen and (max-width:950px) {
  .main_fluid {
-  padding: 0 10px;
+  padding: 0 5px;
  }
 
  .book_bottom_button {
