@@ -680,7 +680,7 @@ p, ul, li, span {
 .right_info h2:after {
     content: "";
     position: absolute;
-    top: 24px;
+        top: calc(100% + 7px);
     width: 101%;
     height: 1px;
     background-color: #0F4233;
