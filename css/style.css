@@ -109,7 +109,21 @@ h1,h2,h3,h4 {
   z-index: 10;
   
 }
+.right_info h2{
+  position: relative;
+  margin-bottom: 25px;
+}
 
+.right_info h2:after {
+ content: "";
+    position: absolute;
+    top: 30px;
+    width: 60%;
+    height: 1px;
+    background-color: #0F4233;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .copyright a {
   text-decoration: none;
   color: #2C3E50;
@@ -630,6 +644,10 @@ h2 {
 
 @media only screen and (max-width:400px) {
 
+  .right_info h2 {
+    margin-bottom: 20px;
+  }
+
 #audioID {
   position: unset !important;
   margin-top: 20px;
@@ -657,6 +675,17 @@ p, ul, li, span {
   }
   .content_list li span:first-child {
     padding: 3px 5px 5px 0px;
+}
+
+.right_info h2:after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    width: 101%;
+    height: 1px;
+    background-color: #0F4233;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
   .front {
@@ -723,19 +752,4 @@ p {
   z-index: 10;
   outline: none;
   transform: scale(0.9);
-}
-.right_info h2{
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.right_info h2:after {
- content: "";
-    position: absolute;
-    top: 30px;
-    width: 60%;
-    height: 1px;
-    background-color: #0F4233;
-    left: 50%;
-    transform: translateX(-50%);
 }
