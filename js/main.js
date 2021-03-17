@@ -6,6 +6,9 @@ var currentPage = 0;
 
 // $('.book').hammer().on("swipeleft", nextPage);
 // $('.book').hammer().on("swiperight", prevPage);
+
+
+
 $(".right_dot").on("click",function(){
 
    if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
@@ -160,3 +163,7 @@ function play() {
 
 return myaudio.play(); 
 };
+
+
+
+
