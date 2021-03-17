@@ -785,7 +785,8 @@ p, ul, li, span {
 .right_info h2:after {
     content: "";
     position: absolute;
-        top: calc(100% + 7px);
+       top: unset;
+    bottom: -6px;
     width: 101%;
     height: 1px;
     background-color: #0F4233;
