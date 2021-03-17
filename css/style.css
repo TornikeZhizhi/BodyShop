@@ -689,7 +689,7 @@ p {
   position: absolute !important;
     top: 50%;
     transform: translateY(-50%);
-    opacity: 0.0000000000001;
+    /*opacity: 0.0000000000001;*/
     z-index: 1000;
 }
 
@@ -723,4 +723,19 @@ p {
   z-index: 10;
   outline: none;
   transform: scale(0.9);
+}
+.right_info h2{
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.right_info h2:after {
+ content: "";
+    position: absolute;
+    top: 30px;
+    width: 60%;
+    height: 1px;
+    background-color: #0F4233;
+    left: 50%;
+    transform: translateX(-50%);
 }
