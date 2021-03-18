@@ -94,7 +94,18 @@ h1,h2,h3,h4 {
     margin-bottom: 5px;
 
 }
-
+.right_info h2 {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right_info h2 span {
+  font-size: 14px;
+}
+.right_info h2 span:first-child {
+  margin-bottom: 5px;
+}
 .content_list li {
 
   display: -webkit-box;
@@ -132,7 +143,7 @@ h1,h2,h3,h4 {
 .right_info h2:after {
  content: "";
     position: absolute;
-    top: 30px;
+    bottom: -7px;
     width: 60%;
     height: 1px;
     background-color: #0F4233;
@@ -621,6 +632,9 @@ h2 {
  .book_bottom_button {
   bottom: -80px;
  }
+ .right_info h2 span {
+  font-size: 13px;
+ }
 }
 
 @media only screen and (max-width:750px) {
@@ -781,6 +795,7 @@ p, ul, li, span {
   .content_list li span:first-child {
     padding: 3px 5px 5px 0px;
 }
+
 
 .right_info h2:after {
     content: "";
