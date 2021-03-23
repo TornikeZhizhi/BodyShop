@@ -35,7 +35,7 @@ $(".right_dot").on("click",function(){
 
 })
 $(".left_dot").on("click",function(){
-
+  $(".scene").removeClass("fix")
     prevPage()
    
 
