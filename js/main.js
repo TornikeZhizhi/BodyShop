@@ -11,10 +11,10 @@ var currentPage = 0;
 
 $(".right_dot").on("click",function(){
 
-   if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+  
     $(".scene").addClass("fix")
     
-   }
+   
 
     nextPage()
 
@@ -35,7 +35,7 @@ $(".right_dot").on("click",function(){
 
 })
 $(".left_dot").on("click",function(){
-  $(".scene").removeClass("fix")
+
     prevPage()
    
 
@@ -80,9 +80,8 @@ $(".book_outsite_text .book_link").on("click",function(e){
      $(".book_bottom_button").addClass("flipped2")
      $(".main_fluid").addClass("shadow")
 
-     if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+     
     $(".scene").addClass("fix")
-}
      
 },700)
 
