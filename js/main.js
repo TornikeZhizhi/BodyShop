@@ -38,7 +38,10 @@ $(".left_dot").on("click",function(){
   $(".scene").removeClass("fix")
     prevPage()
    
+   setTimeout(function(){
 
+      $(".scene").addClass("fix")
+    },1300)
 
     if ($(".page").eq(0).hasClass("active")) {
         
