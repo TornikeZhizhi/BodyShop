@@ -93,7 +93,7 @@ $(".book_outsite_text .book_link").on("click",function(e){
 
 
 $(".book_outsite_text_last .book_link").on("click",function(e){
-
+    $('.scene').removeClass("fix")
     e.preventDefault()
    
     $(".book_bottom_button").removeClass("flipped2")
