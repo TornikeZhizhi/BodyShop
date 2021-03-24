@@ -11,10 +11,10 @@ var currentPage = 0;
 
 $(".right_dot").on("click",function(){
 
-   // if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
+  
     $(".scene").addClass("fix")
     
-   // }
+   
 
     nextPage()
 
@@ -38,10 +38,10 @@ $(".left_dot").on("click",function(){
   $(".scene").removeClass("fix")
     prevPage()
    
-    setTimeout(function(){
+   setTimeout(function(){
 
       $(".scene").addClass("fix")
-    },860)
+    },900)
 
     if ($(".page").eq(0).hasClass("active")) {
         
@@ -94,7 +94,7 @@ $(".book_outsite_text .book_link").on("click",function(e){
 
 
 $(".book_outsite_text_last .book_link").on("click",function(e){
-
+    $('.scene').removeClass("fix")
     e.preventDefault()
     $('.scene').removeClass("fix")
    
