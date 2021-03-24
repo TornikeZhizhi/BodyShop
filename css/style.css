@@ -126,6 +126,36 @@ h1,h2,h3,h4 {
   background-color: #fff;
   
 }
+
+
+.logo svg{
+
+  width: 35px;
+  height: 35px;
+  margin-right: 20px;
+}
+
+.logo img {
+  width: 35px;
+  object-fit: contain;
+
+}
+
+
+.logo svg path {
+  fill: #0F4233;
+}
+
+.logo {
+      transform: translateY(-9px);
+      text-align: right;
+          display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 35px;
+}
+
+
 .copyright {
 
  
@@ -785,9 +815,22 @@ p, ul, li, span {
 }
 .content_list {
     margin-top: 15px;
-    height: calc(100% - 40px);
+    height: calc(100% - 60px);
     overflow-y: scroll;
     padding-right: 10px;
+}
+.logo svg {
+    width: 22px;
+    height: 20px;
+    margin-right: 5px;
+}
+.logo {
+    transform: translateY(4px);
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 17px;
 }
   .content_list li span {
     font-size: 10px;
@@ -884,3 +927,4 @@ p {
       -ms-transform: scale(0.9);
           transform: scale(0.9);
 }
+
