@@ -41,7 +41,7 @@ $(".left_dot").on("click",function(){
     setTimeout(function(){
 
       $(".scene").addClass("fix")
-    },800)
+    },850)
 
     if ($(".page").eq(0).hasClass("active")) {
         
